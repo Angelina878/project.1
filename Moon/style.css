@@ -1,0 +1,47 @@
+img {
+  /*анимация вращения*/
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  /*свойства перехода- transition*/
+  transition: transform 0.8s ease-in-out;
+  width: 500px;
+}
+body {
+  background: rgb(42, 18, 98);
+}
+h1 {
+  /*обводка текста или объем для него*/
+  text-shadow: 0 2px 0 rgb(195, 109, 241);
+  color: rgb(102, 12, 176);
+  /*тень*/
+  box-shadow: 0 0 0 -10px rgb(77, 35, 183), 0 -30px 15px -5px rgb(113, 52, 234),
+    0 20px 15px -2px rgb(137, 6, 251), -20px 0 15px -4px rgb(160, 57, 238);
+}
+img:hover {
+  /*тоже анимация вращения*/
+  /*transform- работа с поворотамиб масштабамиб наклонами и сдвигами*/
+  /*-webkit- показывает правильно отформатированные страницына основе их разметки*/
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.const {
+  margin-top: 6px;
+  width: 500px;
+  height: 2px;
+  /*боттом устанавливает положение нижнего края содержимого элемента без учета толщины рамок и отступов*/
+  border-bottom: none;
+  border-radius: 100px 100px 30px 30px;
+  background: radial-gradient(#670fc5, rgb(35, 4, 79));
+  text-shadow: 0 2px 0 rgb(127, 19, 185);
+  color: rgb(86, 5, 152);
+  margin-left: 35px;
+}
+h2 {
+  box-shadow: 0 0 0 -10px rgb(77, 35, 183), 0 -30px 15px -5px rgb(113, 52, 234),
+    0 20px 15px -2px rgb(137, 6, 251), -20px 0 15px -4px rgb(112, 13, 189);
+  width: 500px;
+  height: 300px;
+  margin-left: 750px;
+  margin-top: -400px;
+  text-shadow: 0 2px 0 rgb(54, 9, 105);
+  color: rgb(192, 128, 244);
+}
